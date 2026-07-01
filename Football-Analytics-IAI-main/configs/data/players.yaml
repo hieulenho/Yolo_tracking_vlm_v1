@@ -1,0 +1,9 @@
+path: ../data/raw/players
+train: images/train
+val: images/val
+
+nc: 3
+names:
+  0: player
+  1: goalkeeper
+  2: ball

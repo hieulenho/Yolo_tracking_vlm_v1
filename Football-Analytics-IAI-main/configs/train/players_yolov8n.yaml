@@ -1,0 +1,7 @@
+# Players detection - YOLOv8n (smallest, fastest)
+data: configs/data/players.yaml
+model: yolov8n.pt
+epochs: 100
+imgsz: 640
+batch: 32  # nhỏ nên batch lớn được
+patience: 20

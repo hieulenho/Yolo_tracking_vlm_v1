@@ -1,0 +1,7 @@
+# Players detection - YOLOv8s (balanced, recommended)
+data: configs/data/players.yaml
+model: yolov8s.pt
+epochs: 100
+imgsz: 640
+batch: 16
+patience: 20

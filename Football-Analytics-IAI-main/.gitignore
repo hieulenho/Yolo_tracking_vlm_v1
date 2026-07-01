@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data & models (lớn, không commit)
+data/raw/
+data/processed/
+data/benchmarks/
+models/*.pt
+models/*.pth
+models/*.onnx
+*.mp4
+*.avi
+*.mov
+!app/assets/*.mp4
+
+# Training outputs
+runs/
+wandb/
+mlruns/
+
+# Reports outputs
+reports/figures/*.png
+reports/figures/*.jpg
+reports/results/*.json
+reports/results/*.csv
+!reports/figures/.gitkeep
+!reports/results/.gitkeep
+
+# Cache
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Notebook
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# Local env
+.env
+
+test_output.jpg
+*.csv
+
+
+out/

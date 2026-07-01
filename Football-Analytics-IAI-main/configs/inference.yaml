@@ -1,0 +1,28 @@
+# Inference config - Football Player Detection and Multi-Object Tracking
+# YOLOv8m detector + DeepSORT tracker
+
+models:
+  players_weights: models/players_best.pt
+
+detection:
+  conf_threshold: 0.35
+  iou_threshold: 0.5
+  imgsz: 640
+  device: cpu
+
+tracking:
+  tracker: deepsort
+  max_age: 30
+  n_init: 3
+  max_cosine_distance: 0.2
+  nn_budget: 100
+  embedder: mobilenet
+  half: false
+  bgr: true
+  embedder_gpu: false
+  only_confirmed: false
+
+visualization:
+  box_thickness: 4
+  font_scale: 0.7
+  font_thickness: 3
